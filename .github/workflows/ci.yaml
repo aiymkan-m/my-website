@@ -11,10 +11,11 @@ jobs:
       - name: Say hello
         run: echo "Hello JumpToTech CI"
 
-      - name: Test Failure
-        run: exit
+      - name: Test Pass
+        run: exit 0
 
       - name: Finish
-        run: echo "CI PASSED" 
+        run: echo "CI PASSED"
+
 
 
