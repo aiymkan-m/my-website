@@ -11,9 +11,10 @@ jobs:
       - name: Say hello
         run: echo "Hello JumpToTech CI"
 
-      - name: Check files
-        run: ls -la
+      - name: Test Failure
+        run: exit
 
-      - name: CI completed
+      - name: Finish
         run: echo "CI PASSED" 
+
 
