@@ -2,12 +2,16 @@ name: My First CI
 
 on:
   push:
-
+    permissions:
+      contents: read
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
       - name: Say hello
         run: echo "Hello JumpToTech CI"
 
@@ -16,6 +20,7 @@ jobs:
 
       - name: Finish
         run: echo "CI PASSED"
+        
         
 
 
